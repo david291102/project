@@ -1,0 +1,91 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover effect for container */
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+/* Animated border for canvas */
+canvas {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    transition: border 0.5s ease;
+}
+
+canvas:hover {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Button style */
+.btn-refresh {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1f2937;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-refresh:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 10px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
